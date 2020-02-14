@@ -8,14 +8,13 @@
 
 	<meta content="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" property="og:url" />
 	<meta content="http://www.thepetedesign.com/images/onepage_scroll_image.png" property="og:image" />
-	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
 	<meta name="author" content="Pete R.">
 	<link rel="canonical" href="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
   <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <style>
     html {
@@ -30,6 +29,9 @@
       margin: 0;
       height: 100%;
       -webkit-font-smoothing: antialiased;
+      background-image: url("1st Page.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
     }
     
     .wrapper {
@@ -230,7 +232,7 @@
       position: relative;
       top: 25%;
       margin: 0 auto 0;
-      max-width: 950px;
+      max-width: 1440px;
       z-index: 3;
     }
     .main section  {
@@ -244,9 +246,7 @@
     }
     
     .main section.page1 {
-        background-image: url("1st Page.png");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        
     }
     .main section.page1 h1 {
       text-align: center ;
@@ -254,6 +254,7 @@
       margin-bottom: 15px;
       font-size: 140px;
       color: white;
+      font-family: 'Raleway-SemiBold';
     }
     .main section.page1 h2 {
       text-align: center ;
@@ -261,6 +262,7 @@
       line-height: 160%;
       color: whitesmoke;
       font-size: 35px;
+      font-family: 'Raleway';
     }
     .main section .page_container .btns {
       clear: both;
@@ -272,9 +274,7 @@
       text-align: center;
     }
     .main section.page2 {
-      background: url("2nd page.png");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
+      
     }
     .main section.page2 > img {
       position: absolute;
@@ -284,19 +284,27 @@
     }
     .main section.page2 .page_container {
       overflow: hidden;
-      top: 100px; 
-      right: -200px;
+      top: 150px;
     }
     .main section.page2 h1 {
-      text-align: right;
+      text-align: center;
       padding: 0;
       font-size: 80px;
       color: white;
+      font-family: 'Raleway-SemiBold';
     }
     .main section.page2 h2 {
       color: whitesmoke;
-      text-align: right;
-      line-height: 160%;
+      text-align: center;
+      line-height: 140%;
+      font-weight: 100;
+      font-size: 35px;
+      font-family: 'Raleway-SemiBold';
+    }
+    .main section.page2 h3 {
+      color: whitesmoke;
+      text-align: center;
+      line-height: 140%;
       font-weight: 100;
       font-size: 25px;
     }
@@ -305,36 +313,113 @@
       color: #FFF;
       }
     .main section.page3 {
-      background: url("3rd page.png");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
+     
+    }
+    .main section.page3 .page_container {
+      overflow: hidden;
+      top: 150px;
+    }
+    .main section.page3 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0;
+      font-size: 80px;
+      letter-spacing: -1px;
+      color: white;
+      font-family: 'Raleway-SemiBold';
+    }
+    .main section.page3 h2 {
+      color: whitesmoke;
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+      font-size: 35px;
+    }
+    .main section.page3 h3 {
+      color: whitesmoke;
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+      font-size: 25px;
     }
     .main section.page4 {
-      background: url("2nd page.png");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
+      
     }
     .main section.page4 .page_container {
       overflow: hidden;
-      width: 500px;
-      right: -285px;
+      top: 150px;
     }
     .main section.page4 h1 {
       text-align: center;
       padding: 0;
       margin-bottom: 0;
-      font-size: 70px;
+      font-size: 80px;
       letter-spacing: -1px;
       color: white;
+      font-family: 'Raleway-SemiBold';
     }
     .main section.page4 h2 {
       color: whitesmoke;
-      text-align: right;
+      text-align: center;
       line-height: 160%;
       font-weight: 100;
-      font-size: 21px;
+      font-size: 35px;
     }
-    
+    .main section.page4 h3 {
+      color: whitesmoke;
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+      font-size: 25px;
+    }
+    .main section.page5 {
+      
+    }
+    .main section.page5 .page_container {
+      overflow: hidden;
+      top: 150px;
+    }
+    .main section.page5 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0;
+      font-size: 80px;
+      letter-spacing: -1px;
+      color: white;
+      font-family: 'Raleway-SemiBold';
+    }
+    .main section.page5 h2 {
+      color: whitesmoke;
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+      font-size: 35px;
+    }
+    .main section.page5 h3 {
+      color: whitesmoke;
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+      font-size: 25px;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 60px;
+      text-align: center;
+      text-decoration: none;  
+    }
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    } 
     body.disabled-onepage-scroll .onepage-wrapper  section {
       min-height: 100%;
       height: auto;
@@ -407,9 +492,12 @@
 	    
 	    <section class="page2">
 	      <div class="page_container">
-          <h1>About Pasckathon '20</h1>
-          <h2>PASCKATHON 2020 is open for all event where participants can use any technology to build their hacks. For the ﬁrst round, participants will be submitting a PowerPoint Presentation with their problem statement, ideas, solutions, tech stack and case diagrams.</h2>
-          <h2>During the second round, qualiﬁed teams will gather at the given venue and implement their idea. This round will be for 18 hours. After the time is up, the teams will stop working on the hacks and present it in front of the judges.  </h2>
+          <h1>About Pasckathon '20</h1>  
+          <h3>PASCKATHON 2020 is open for all event where participants can use any technology to build their hacks. Some of the suggested domains are: Machine Learning, Blockchain, Internet of Things, Artiﬁcial Intelligence, Big Data, Cyber Security, Cloud and DevOps.</h3>
+          <h2>Where?</h2>
+          <h3>Pune Institute of Computer Technology, Pune</h3>
+          <h2>When?</h2>
+          <h3>"Insert date and time"</h3>
           <!--<code class="html">
   	        &lt;div class="main"&gt;<br>
   	          &lt;section&gt;...&lt;/section&gt;<br>
@@ -426,12 +514,42 @@
       
       <section class="page3">
 	      <div class="page_container">
+          <h1>Timeline</h1>
   	    </div>
       </section>
 
-	    <section class="page4">
+      <section class="page4">
 	      <div class="page_container">
-          <h1>Contact</h1>
+          <h1>Sponsors</h1>
+  	    </div>
+      </section>
+
+	    <section class="page5">
+	      <div class="page_container">
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+              <h1>Contact</h1>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <h2>Phone and Email</h2>
+              <h3>Aditya Achad: 8888618192</h2>
+              <h3>Nistha Sharma: 7083518810</h3>
+              <h3>Pranav Kadam: 9404094923</h3>
+            </div>
+            <div class="col-sm-4">
+              <h2>Address</h2>
+              <h3> Pune Institute of Computer Technology, Near Trimurti Chowk, Bharati Vidyapeeth Campus, Dhankawadi, Pune, Maharashtra 411043</h3>
+            </div>
+            <div class="col-sm-4">
+              <h2>Social Media</h2>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+            </div>
+          </div>
           <h2></h2>
   	    </div>
       </section>
