@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+.timeline_container{
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Styling */
+.timeline {
+    margin: 4em auto 4em 30em;
+    position: relative;
+    max-width: 46em;
+  }
+  .timeline:before {
+    background-color: rgb(56, 56, 56);
+    content: '';
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 2px;
+    height: 100%;
+  }
+  
+  .timeline-event {
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .timeline-event:hover .timeline-event-icon {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: #a83279;
+  }
+  .timeline-event:hover .timeline-event-thumbnail {
+    -moz-box-shadow: inset 40em 0 0 0 #a83279;
+    -webkit-box-shadow: inset 40em 0 0 0 #a83279;
+    box-shadow: inset 40em 0 0 0 #a83279;
+  }
+  
+  .timeline-event-copy {
+    padding: 2em;
+    position: relative;
+    top: -1.875em;
+    left: 4em;
+    width: 80%;
+  }
+  .timeline-event-copy h3 {
+    font-size: 1.75em;
+  }
+  .timeline-event-copy h4 {
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+  }
+  .timeline-event-copy strong {
+    font-weight: 700;
+  }
+  .timeline-event-copy p:not(.timeline-event-thumbnail) {
+    padding-bottom: 1.2em;
+  }
+  
+  .timeline-event-icon {
+    -moz-transition: -moz-transform 0.2s ease-in;
+    -o-transition: -o-transform 0.2s ease-in;
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: rgb(56, 56, 56);
+    /* outline: 10px solid white; */
+    display: block;
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+  }
+  
+  .timeline-event-thumbnail {
+    -moz-transition: box-shadow 0.5s ease-in 0.1s;
+    -o-transition: box-shadow 0.5s ease-in 0.1s;
+    -webkit-transition: box-shadow 0.5s ease-in;
+    -webkit-transition-delay: 0.1s;
+    transition: box-shadow 0.5s ease-in 0.1s;
+    color: white;
+    font-size: 1.   em;
+    font-weight: bold;
+    /* background-color: black; */
+
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+    -moz-box-shadow: inset 0 0 0 0em #ef795a;
+    -webkit-box-shadow: inset 0 0 0 0em #ef795a;
+    box-shadow: inset 0 0 0 0em #ef795a;
+    display: inline-block;
+    margin-bottom: 1.2em;
+    padding: 0.25em 1em 0.2em 1em;
+  }
+
+  .timeline-event-copy embed{
+        width: 100px;
+        height: 100px;
+  }
+
+  @media only screen and (max-width: 1080px) {
+    .timeline{
+        margin-left: 19em;
+    }
+  }
+
+  
+  @media only screen and (max-width: 720px) {
+    .timeline{
+        margin-left: 8em;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .timeline{
+        margin-left: 0.5em;
+    }
+
+    .timeline-event-copy h3 {
+        font-size: 0.3em;
+      }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .timeline{
+        margin-left: 5px;
+    }
+
+    .timeline-event-copy h3 {
+        font-size:20px;
+      }
+
+      .timeline:before {
+        left:1em;
+      }
+
+      .timeline-event-copy{
+          padding: 1px;
+      }
+
+      .timeline-event-thumbnail{
+          font-size: 14px;
+      }
+  }
