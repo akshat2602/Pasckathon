@@ -1,0 +1,16 @@
+h1
+{
+   font-family: 'Raleway';
+   text-align: center;
+   color:black;
+   z-index: 1;
+}
+body
+{
+    background: url('../ASSETS/Images/1st Page.png');  
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+body > img{
+    z-index: 3;
+}
