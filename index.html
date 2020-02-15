@@ -231,6 +231,7 @@
     margin: 0 auto 0;
     max-width: 1440px;
     z-index: 3;
+
   }
   .main section  {
     overflow: hidden;
@@ -253,6 +254,29 @@
     font-size: 140px;
     color: white;
     font-family: 'Raleway';
+    border-right: 2px solid white ;
+    width:1000px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-align: center;
+    margin-left: 150px;
+    animation: type 3s steps(13),blinking 1s infinite;
+
+  }
+  @keyframes type
+  {
+      0%
+      {
+        width: 0px;
+
+      }
+  }
+  @keyframes blinking
+  {
+    50%
+    {
+      border-color: transparent;
+    }
   }
   .main section.page1 h2 {
     text-align: center ;
@@ -323,6 +347,7 @@
     letter-spacing: -1px;
     color: white;
     font-family: 'Raleway';
+
   }
   .main section.page3 h2 {
     color: whitesmoke;
@@ -494,7 +519,7 @@
 	      <div class="page_container">
           <div class="row">
             <div class="col-sm-12">
-              <h1>About Pasckathon '20</h1>  
+              <h1><span>About</span><span> Pasckathon '20</span>></h1>  
               <h3>PASCKATHON 2020 is open for all event where participants can use any technology to build their hacks. Some of the suggested domains are: Machine Learning, Blockchain, Internet of Things, Artiﬁcial Intelligence, Big Data, Cyber Security, Cloud and DevOps.</h3>
               <h2>Where?</h2>
               <h3>Pune Institute of Computer Technology, Pune</h3>
