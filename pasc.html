@@ -11,24 +11,37 @@
 	<link rel="stylesheet" href="ASSETS/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
 	<div id="fullPage">
 		<div class="section s1">
-			<h1>The First Section</h1>
+          <h1>Pasckathon <span class= "twenty-text">'20</span></h1>
+          <h2>What will you innovate?</h2>
+          <h2>“Code is like humor. When you have to explain it, it’s bad.”</h2>
 		</div>
-		<div class="section s2">
-			<h1>The Second Section</h1>
+		<div class="section">
+			<h1>About</h1>
 		</div>
-		<div class="section s3">
-			<h1>The Third Section</h1>
+		<div class="section">
+			<h1>Timeline</h1>
+		</div>
+		<div class="section">
+			<h1>FAQ</h1>
+		</div>
+		<div class="section">
+			<h1>Sponsors</h1>
+		</div>
+		<div class="section">
+			<h1>Contact Us</h1>
 		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
 	<script>
 		new fullpage('#fullPage', {
-			autoScrolling: true
+			autoScrolling: true,
+			navigation: true,
+			navigationTooltips: ['Home','About','Timeline','FAQ','Sponsors','Contact Us'],
+			showActiveTooltip: true,
 		})
 	</script>
 </body>

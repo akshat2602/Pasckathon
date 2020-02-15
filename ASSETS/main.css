@@ -2,10 +2,29 @@ h1
 {
    font-family: 'Raleway';
    text-align: center;
-   color:black;
+   color:white;
 }
 body
 {
     background: url('../ASSETS/Images/1st Page.png');
     background-size: cover;
+    font-family: 'Raleway';
+    color:white;
+    text-align: center;
+}
+.fp-nav
+{
+  background: white !important;
+}
+.s1  h1
+{
+  font-size: 100px;
+}
+.s1  h2
+{
+  font-size: 50px;
+}
+.twenty-text
+{
+  color: #03dbfc;
 }
