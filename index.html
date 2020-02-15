@@ -9,6 +9,7 @@
   <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
   <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
   <link href='style.css' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -234,14 +235,16 @@
   .main section  {
     overflow: hidden;
   }
-  
   .main section > img {
     position: absolute;
     max-width: 100%;
     z-index: 1;
   }
-  
   .main section.page1 {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 40px;
   }
   .main section.page1 h1 {
     text-align: center ;
@@ -269,16 +272,13 @@
     text-align: center;
   }
   .main section.page2 {
-  }
-  .main section.page2 > img {
-    position: absolute;
-    top: -300px;
-    left: 50%;
-    margin-left: -500px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 40px;
   }
   .main section.page2 .page_container {
     overflow: hidden;
-    top: 150px;
   }
   .main section.page2 h1 {
     text-align: center;
@@ -307,10 +307,13 @@
     color: #FFF;
     }
   .main section.page3 {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 40px;
   }
   .main section.page3 .page_container {
     overflow: hidden;
-    top: 150px;
   }
   .main section.page3 h1 {
     text-align: center;
@@ -336,11 +339,13 @@
     font-size: 25px;
   }
   .main section.page4 {
-    
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 40px;
   }
   .main section.page4 .page_container {
     overflow: hidden;
-    top: 150px;
   }
   .main section.page4 h1 {
     text-align: center;
@@ -366,11 +371,13 @@
     font-size: 25px;
   }
   .main section.page5 {
-    
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 40px;
   }
   .main section.page5 .page_container {
     overflow: hidden;
-    top: 150px;
   }
   .main section.page5 h1 {
     text-align: center;
@@ -420,7 +427,7 @@
   
   body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
     padding: 20px;
-    margin-top: 150px;
+    margin-top: 25px
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -485,12 +492,16 @@
 	    
 	    <section class="page2">
 	      <div class="page_container">
-          <h1>About Pasckathon '20</h1>  
-          <h3>PASCKATHON 2020 is open for all event where participants can use any technology to build their hacks. Some of the suggested domains are: Machine Learning, Blockchain, Internet of Things, Artiﬁcial Intelligence, Big Data, Cyber Security, Cloud and DevOps.</h3>
-          <h2>Where?</h2>
-          <h3>Pune Institute of Computer Technology, Pune</h3>
-          <h2>When?</h2>
-          <h3>"Insert date and time"</h3>
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>About Pasckathon '20</h1>  
+              <h3>PASCKATHON 2020 is open for all event where participants can use any technology to build their hacks. Some of the suggested domains are: Machine Learning, Blockchain, Internet of Things, Artiﬁcial Intelligence, Big Data, Cyber Security, Cloud and DevOps.</h3>
+              <h2>Where?</h2>
+              <h3>Pune Institute of Computer Technology, Pune</h3>
+              <h2>When?</h2>
+              <h3>"Insert date and time"</h3>
+            </div>
+          </div>
           <!--<code class="html">
   	        &lt;div class="main"&gt;<br>
   	          &lt;section&gt;...&lt;/section&gt;<br>
@@ -507,13 +518,25 @@
       
       <section class="page3">
 	      <div class="page_container">
-          <h1>Timeline</h1>
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+              <h1>Timeline</h1>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
   	    </div>
       </section>
 
       <section class="page4">
 	      <div class="page_container">
-          <h1>Sponsors</h1>
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+              <h1>Sponsors</h1>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
   	    </div>
       </section>
 
