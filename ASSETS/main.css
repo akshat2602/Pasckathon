@@ -1,0 +1,11 @@
+h1
+{
+   font-family: 'Raleway';
+   text-align: center;
+   color:black;
+}
+body
+{
+    background: url('../ASSETS/Images/1st Page.png');
+    background-size: cover;
+}
