@@ -1,8 +1,3 @@
-body{
-  scroll-behavior: smooth;
-}
-
-
 h1
 {
    font-size: 80px;
@@ -54,6 +49,7 @@ body
     font-family: 'Raleway';
     color:white;
     text-align: center;
+    scroll-behavior: smooth;
 }
 .fp-nav
 {
@@ -409,3 +405,5 @@ details[open] summary:hover::after {
      white-space: nowrap;
      border: 0;
  }
+=======
+}

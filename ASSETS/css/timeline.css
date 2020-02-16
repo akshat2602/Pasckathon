@@ -30,6 +30,7 @@
 
   .timeline-event:nth-child(1){
     margin-top: 50px;
+    margin-bottom: 70px;
   }
   .timeline-event:hover .timeline-event-icon {
     -moz-transform: rotate(-45deg);
@@ -171,5 +172,7 @@
       background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+  }
+
   }
 
