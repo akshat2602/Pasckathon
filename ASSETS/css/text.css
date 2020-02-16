@@ -8,8 +8,6 @@
     width:1000px;
     white-space: nowrap;
     overflow:hidden;
-    text-align: center;
-    margin-left: 150px;
     animation: type 5s steps(13),blinking 1s infinite;
 
   }
