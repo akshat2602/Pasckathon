@@ -135,7 +135,7 @@ summary::-webkit-details-marker {
 
 details[open] .control-icon-close {
   display: initial;
-  transition: .3s ease;
+  transition: .5s ease;
 }
 
 details[open] .control-icon-expand {
