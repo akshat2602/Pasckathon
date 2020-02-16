@@ -10,18 +10,24 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="ASSETS/main.css">
-	<link rel="stylesheet" href="ASSETS/timeline.css">
+	<link rel="stylesheet" href="ASSETS/css/main.css">
+	<link rel="stylesheet" href="ASSETS/css/timeline.css">
+	<link rel="stylesheet" href="ASSETS/css/fontawesome.min.css">
+	<link rel="stylesheet" href="ASSETS/css/all.css">
+
 	<script src="jch.js"></script> 
 </head>
 <body>
 	<div id="fullPage">
-		<div class="section s1">
+
+<!-- -----------------------------------------------------------HOME PAGE--------------------------------------------------------- -->
+
+		<div class="section page s1">
           <h1>Pasckathon <span class= "twenty-text">'20</span></h1>
           <h2>What will you innovate?</h2>
           <h2>“Code is like humor. When you have to explain it, it’s bad.”</h2>
 		</div>
-		<div class="section s2">
+		<div class="section page s2">
 			<div class="row">
 				<div class="col-sm-1"></div>
 				<div class="col-sm-10">
@@ -35,10 +41,83 @@
 				<div class="col-sm-1"></div>
 			</div>
 		</div>
-		<div class="section s3">
-			<h1>Timeline</h1>	
+
+		<!-- ---------------------------------------------------------------TIMELINE------------------------------------------------------------------ -->
+
+		<div class="section page s3">
+			<div class="timeline_container">
+				<h1>Timeline</h1>
+				<br><br>
+				<div class="timeline_content">
+				  <ul class="timeline">
+					<li class="timeline-event">
+					  <label class="timeline-event-icon"></label>
+					  <div class="timeline-event-copy">
+						<p class="timeline-event-thumbnail">20th February 2020</p>
+						<div class="illust"><i class="fas fa-question-circle"></i></div>
+						<h3>Problem Statement Release</h3>
+						
+					  </div>
+					</li>
+					<li class="timeline-event">
+					  <label class="timeline-event-icon"></label>
+					  <div class="timeline-event-copy">
+						<p class="timeline-event-thumbnail">4th March 2020</p>
+						<div class="illust"><i class="fas fa-calendar-week"></i></div>
+						<h3>Last Date for Idea Submission</h3>
+						
+					</li>
+					<li class="timeline-event">
+					  <label class="timeline-event-icon"></label>
+					  <div class="timeline-event-copy">
+						<p class="timeline-event-thumbnail">6th March 2020</p>
+						<div class="illust"><i class="fas fa-list-ol"></i></div>
+						<h3>First-Round Results</h3>
+					  </div>
+					</li>
+	  
+					<li class="timeline-event">
+					  <label class="timeline-event-icon"></label>
+					  <div class="timeline-event-copy">
+						<p class="timeline-event-thumbnail">14th March 2020</p>
+						<div class="illust"><i class="fas fa-laptop-code"></i></div>
+						<h3>Commencement of Final Round</h3>
+					  </div>
+					</li>
+	  
+					<li class="timeline-event">
+					  <label class="timeline-event-icon"></label>
+					  <div class="timeline-event-copy">
+						<p class="timeline-event-thumbnail">15th March 2020</p>
+						<div class="illust"><i class="fas fa-stopwatch"></i></div>
+						<h3>Conclusion of Final Round</h3>
+					  </div>
+					</li>
+	  
+					<li class="timeline-event">
+					  <label class="timeline-event-icon"></label>
+					  <div class="timeline-event-copy">
+						<p class="timeline-event-thumbnail">15th March 2020</p>
+						<div class="illust"><i class="fas fa-trophy"></i></div>
+						<h3>Announcement of Results</h3>
+					  </div>
+					</li>
+	  
+	  
+					
+				  </ul>
+				</div>
+
+
+
+
 		</div>
-		<div class="section s4">
+		</div>
+		
+
+		<!-- -----------------------------------------------------------------------FAQ--------------------------------------------------------------------------- -->
+
+		<div class="section page s4">
 			<h1>Frequently Asked Questions</h1>
 			<div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
   			<svg xmlns="http://www.w3.org/2000/svg">
@@ -105,10 +184,17 @@
 				</details>
 			</div>
 		</div>
-		<div class="section s5">
+
+
+		<!-- --------------------------------------------------------SPONSOR PAGE----------------------------------------------------------- -->
+
+		<div class="section page s5">
 			<h1>Sponsors</h1>
 		</div>
-		<div class="section s6">
+
+<!-- --------------------------------------------------------------------CONTACT PAGE--------------------------------------------------------------- -->
+
+		<div class="section page s6">
 			<div class="row">
 				<div class="col-sm-4"></div>
 				<div class="col-sm-4">
@@ -133,13 +219,21 @@
 			  </div>
 		</div>
 	</div>
+
+<!-- -------------------------------------------------------------------END--------------------------------------------------------------------------------- -->
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+
+<script src="ASSETS/js/scrolloverflow.js"></script>
+
 	<script>
 		new fullpage('#fullPage', {
-			autoScrolling: true,
+			// autoScrolling: true,
+			sectionSelector: '.page',
 			navigation: true,
 			navigationTooltips: ['Home','About','Timeline','FAQ','Sponsors','Contact Us'],
 			showActiveTooltip: true,
+			scrollOverflow : true,
 		})
 	</script>
 </body>
