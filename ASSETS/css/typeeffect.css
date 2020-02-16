@@ -1,0 +1,30 @@
+#pasc{
+    text-align: center;
+    padding: 0;
+    font-size: 100px;
+    color: white;
+    font-family: 'consolas';
+    animation: type 4s steps(14), blinking 1s infinite;
+    overflow: hidden;
+    white-space:nowrap;
+    border-right:3px solid white;
+    width: 14ch;
+    margin-left: 90px;
+
+}
+@keyframes type{
+    0%{
+      width:0ch;
+    }
+    100%
+    {
+      width:14ch;
+    }
+}
+@keyframes blinking
+  {
+    50%
+    {
+      border-color: transparent;
+    }
+  }
