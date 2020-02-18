@@ -2,6 +2,7 @@
 h1
 {
    font-size: 80px;
+   margin: 0;
 }
 .s1 h2
 {
@@ -45,7 +46,7 @@ h3
 }
 body
 {
-    background: url('../Images/1st Page.png');
+    background: url('../Images/Pasc5v2.png');
     background-size: cover;
     font-family: 'Raleway';
     color:white;
@@ -261,7 +262,7 @@ p > a:hover{
      margin: 0;
      padding: 0;
      overflow:hidden;
- 
+
      /*Avoid flicker on slides transitions for mobile phones #336 */
      -webkit-tap-highlight-color: rgba(0,0,0,0);
  }
@@ -464,13 +465,13 @@ p > a:hover{
  .fp-auto-height .fp-tableCell{
      height: auto !important;
  }
- 
+
  .fp-responsive .fp-auto-height-responsive.fp-section,
  .fp-responsive .fp-auto-height-responsive .fp-slide,
  .fp-responsive .fp-auto-height-responsive .fp-tableCell {
      height: auto !important;
  }
- 
+
  /*Only display content to screen readers*/
  .fp-sr-only{
      position: absolute;
