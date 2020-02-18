@@ -1,47 +1,51 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 h1
 {
-   font-size: 80px;
+  font-size: 80px;
 }
 .s1 h2
 {
-  font-size: 35px;
-  margin: 0;
+  font-size: 30px;
   color: white;
+  margin: 0;
 }
 .s2 h2
 {
   color: white;
-  font-size: 35px;
+  font-size: 30px;
   margin: 0;
 }
 .s3 h2
 {
   color: white;
+  font-size: 30px;
   margin: 0;
-  font-size: 35px;
 }
 .s4 h2
 {
   color: white;
+  font-size: 30px;
   margin: 0;
-  font-size: 35px;
 }
 .s5 h2
 {
   color: white;
+  font-size: 30px;
   margin: 0;
-  font-size: 35px;
 }
 .s6 h2
 {
   color: white;
+  font-size: 30px;
   margin: 0;
-  font-size: 35px;
 }
 h3
 {
-  font-size: 25px;
+  font-size: 20px;
+}
+.page{
+  margin-right:15px;
+  margin-left: 15px;
 }
 body
 {
@@ -58,17 +62,10 @@ body
 {
   background: white !important;
 }
-.s1 h1
-{
-  font-size: 100px;
-}
+
 .twenty-text
 {
   color: #03dbfc;
-}
-body {
-  font-family: "IBM Plex Sans", sans-serif;
-  background-color: rgba(0,0,0,.1);
 }
 
 h2 {
@@ -80,7 +77,6 @@ h2 {
   line-height: 1.5;
   color: black;
 }
-
 details {
   width: 75%;
   min-height: 5px;
@@ -88,11 +84,11 @@ details {
   padding: 45px 70px 45px 45px;
   margin: 0 auto;
   position: relative;
-  font-size: 22px;
+  font-size: 20px;
   border: 1px solid rgba(0,0,0,.1);
   border-radius: 15px;
   box-sizing: border-box;
-  transition: all .3s;
+  transition: all .5s;
 }
 
 details + details {
@@ -101,8 +97,10 @@ details + details {
 
 details[open] {
   min-height: 50px;
-  background-color: #252525;
+  background-color: #333;
   box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+  border: #2d3e41 ;
+  border-radius: 15px;
 }
 
 details p {
@@ -124,7 +122,7 @@ summary:focus {
 }
 
 summary::-webkit-details-marker {
-  display: none
+  display: none;
 }
 
 .control-icon {
@@ -139,7 +137,7 @@ summary::-webkit-details-marker {
 
 details[open] .control-icon-close {
   display: initial;
-  transition: .3s ease;
+  transition: .5s ease;
 }
 
 details[open] .control-icon-expand {
@@ -200,7 +198,7 @@ p > a:hover{
   margin-top: 10px;
 }
 .social-icons li {
-  vertical-align: top;
+  vertical-align: text-top;
   display: inline;
 }
 .social-icons a {
@@ -349,7 +347,7 @@ p > a:hover{
      margin-top: -32px;
      top: 50%;
      opacity: 1;
-     -webkit-transform: translate3d(0,0,0);
+     /*-webkit-transform: translate3d(0,0,0);*/
  }
  #fp-nav.fp-right {
      right: 17px;
@@ -482,5 +480,3 @@ p > a:hover{
      white-space: nowrap;
      border: 0;
  }
-=======
-}
