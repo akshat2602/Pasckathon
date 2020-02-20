@@ -243,4 +243,16 @@ box-shadow: -3px 2px 5px 0px rgb(34, 34, 34);
         padding: 7px
     }
 }
+
+@media screen and (max-width:489px){
+    .timeline-event:nth-child(odd){
+        padding-left: 17px;
+        padding-right: 30px;
+    }
+
+    .timeline-event:nth-child(even){
+        padding-left: 30px;
+        padding-right: 17px;
+    }
+}
   
