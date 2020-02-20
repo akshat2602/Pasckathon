@@ -24,9 +24,11 @@
 /* header */
 
 .header {
-  background-color: #c2d6d6;
+  background-color: #060607;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
+  top:0;
+  left: 0;
   width: 100%;
   z-index: 3;
 }
@@ -36,13 +38,12 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #c2d6d6;
+ 
 }
 
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
 
@@ -162,7 +163,7 @@
 
 <!-- -----------------------------------------------------------HOME PAGE--------------------------------------------------------- -->
 <header class="header">
-  <a href="" class="logo" style="font-family: 'Acme', sans-serif;">PASCKATHON</a>
+  <a href="inex.html" class="logo" style="font-family: 'Acme', sans-serif;"><img src="ASSETS\Images\pasc.png" height="50px" alt=""></a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
@@ -176,13 +177,14 @@
 
 		<div class="section page s1">
 			<div class="row">
-				<div class="col-sm-2"></div>
-				<div class="col-sm-8">
-						<h1 id="pasc">Pasckathon<span class= "twenty-text">'20</span></h1>
+				<!-- <div class="col-sm-2"></div> -->
+				<div class="">
+						<!-- <h1 id="pasc">Pasckathon<span class= "twenty-text">'20</span></h1> -->
+						<span class="element"></span>
           			<h2>What will you innovate?</h2>
           			<h2>“Code is like humor. When you have to explain it, it’s bad.”</h2>
 				</div>
-				<div class="col-sm-2"></div>
+				<!-- <div class="col-sm-2"></div> -->
 			</div>
 		</div>
 
@@ -214,11 +216,11 @@
 		</div>	
 		<!-- ---------------------------------------------------------------TIMELINE------------------------------------------------------------------ -->
 
-		<div class="section page s3">
+		<div class="section page s3" id="timeline">
 			<div class="timeline_container">
 				<h1 class="ml1">
 					<span class="text-wrapper">
-					  <span class="letters">Time</span>
+					  <span class="letters">Timeline</span>
 					  <span class="line line2"></span>
 					</span>
 				  </h1>
@@ -432,7 +434,15 @@
 
 <script src="ASSETS/js/scrolloverflow.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="ASSETS/js/font-motion-1.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+  <script src="ASSETS/js/waypoint.js"></script>
+	<script src="ASSETS/js/font-motion-1.js"></script>
+	<!-- <script src="ASSETS/js/typed.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+	
 
 	<script>
 		new fullpage('#fullPage', {
@@ -444,7 +454,18 @@
 			scrollOverflow : true,
 
 
-		})
+		});
+
+		
+
+var options = {
+  strings: ["Pascathon<span class='element' style='color:cyan'>'20</span>"],
+  typeSpeed: 80
+};
+
+var typed = new Typed('.element', options);
+		
+
 	</script>
 </body>
 </html>

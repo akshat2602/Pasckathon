@@ -1,28 +1,9 @@
-#pasc{
-  padding: 0;
-  text-align: center ;
+.element{
   color: white;
   font-family: 'consolas';
-  animation: type 4s steps(13), blinking 1s infinite;
-  overflow: hidden;
-  white-space:nowrap;
-  border-right:3px solid white;
-  width: 13ch;
+  font-size: 10vw; 
+}
+
+.typed-cursor{
   font-size: 10vw;
-}
-@keyframes type{
-  0%{
-    width:0ch;
-  }
-  100%
-  {
-    width:13ch;
-  }
-}
-@keyframes blinking
-{
-  50%
-  {
-    border-color: transparent;
-  }
 }
