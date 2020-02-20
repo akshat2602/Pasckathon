@@ -2,13 +2,13 @@
   padding: 0;
   color: white;
   font-family: 'consolas';
-  animation: type 4s steps(14), blinking 1s infinite;
+  animation: type 4s steps(13), blinking 1s infinite;
   overflow: hidden;
   white-space:nowrap;
   border-right:3px solid white;
-  width: 14ch;
+  width: 13ch;
   font-size: 10vw;
-  margin-left: 0%;
+  margin: 0%;
 }
 @keyframes type{
   0%{
@@ -16,7 +16,7 @@
   }
   100%
   {
-    width:14ch;
+    width:13ch;
   }
 }
 @keyframes blinking
