@@ -43,20 +43,16 @@ h3
 {
   font-size: 20px;
 }
-.page{
-  margin-right:15px;
-  margin-left: 15px;
-}
 body
 {
-    background: url('../Images/Pasc5v2.png');
-    background-size: cover;
-    font-family: 'Raleway';
-    color:white;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
+  background: url('../Images/Pasc5v2.png');
+  background-size: cover;
+  font-family: 'Raleway';
+  color:white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 .fp-nav
 {
@@ -81,11 +77,11 @@ details {
   width: 75%;
   min-height: 5px;
   max-width: 700px;
-  padding: 45px 70px 45px 45px;
+  padding: 45px 45px 45px 45px;
   margin: 0 auto;
-  position: relative;
+  position: center;
   font-size: 20px;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid #2d3e41;
   border-radius: 15px;
   box-sizing: border-box;
   transition: all .5s;
@@ -118,7 +114,6 @@ summary {
 
 summary:focus {
   outline: none;
-  box-shadow: 0 0 0 4px #f6f7f8, 0 0 0 5px skyblue;
 }
 
 summary::-webkit-details-marker {
@@ -162,9 +157,6 @@ details[open] summary:hover::after {
     transform: scale(1);
   }
 }
-
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 a {
   text-decoration: none;

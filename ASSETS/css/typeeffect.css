@@ -1,5 +1,6 @@
 #pasc{
   padding: 0;
+  text-align: center ;
   color: white;
   font-family: 'consolas';
   animation: type 4s steps(13), blinking 1s infinite;
@@ -8,7 +9,6 @@
   border-right:3px solid white;
   width: 13ch;
   font-size: 10vw;
-  margin: 0%;
 }
 @keyframes type{
   0%{
