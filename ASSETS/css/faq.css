@@ -1,7 +1,7 @@
 details {
     width: 75%;
     min-height: 5px;
-    max-width: 700px;
+    min-width: 350px;
     max-height: 310px;
     padding: 20px 20px 20px 20px;
     margin: 0 auto;
@@ -16,7 +16,10 @@ details {
 details + details {
     margin-top: 20px;
 }
-  
+details p
+{
+    margin-top: 15px;
+}
 details[open] {
     min-height: 50px;
     background-color: #505050;
@@ -30,7 +33,6 @@ details p {
 }
   
 summary {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
@@ -45,26 +47,7 @@ summary::-webkit-details-marker {
     display: none
 }
   
-.control-icon {
-    fill: skyblue;
-    transition: .3s ease;
-    pointer-events: none;
-    width: 20px;
-    height: 20px
-}
-  
-.control-icon-close {
-    display: none;
-}
-  
-details[open] .control-icon-close {
-    display: initial;
-    transition: .3s ease;
-}
-  
-details[open] .control-icon-expand {
-    display: none;
-}
+
   
 details[open] summary:hover::after {
     animation: pulse 1s ease;
