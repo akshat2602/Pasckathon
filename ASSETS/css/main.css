@@ -1,6 +1,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
-
+.page s3{
+  margin-top: 50px;
+}
 .s1{
   text-align: center;
 }
