@@ -15,167 +15,30 @@
 	<link rel="stylesheet" href="ASSETS/css/timeline.css">
 	<link rel="stylesheet" href="ASSETS/css/typeeffect.css">
 	<link rel="stylesheet" href="ASSETS/css/all.css">
-<link rel="stylesheet" href="ASSETS/css/font-motion.css">
-
+	<link rel="stylesheet" href="ASSETS/css/font-motion.css">
+	<link rel="stylesheet" href="ASSETS/css/header.css">
 	<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
-	<style type="text/css">
-
-
-/* header */
-
-.header {
-  background-color: #060607;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
-  top:0;
-  left: 0;
-  width: 100%;
-  z-index: 3;
-}
-
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
- 
-}
-
-.header li a {
-  display: block;
-  padding: 20px 20px;
-  text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: #f4f4f4;
-}
-
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-/* menu */
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-
-/* menu icon */
-
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-.header .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* menu btn */
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 240px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-/* 48em = 768px */
-
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-}
-
-	</style>
-
-	<script src="jch.js"></script>
 
 </head>
 <body>
 	<div id="fullPage">
 
 <!-- -----------------------------------------------------------HOME PAGE--------------------------------------------------------- -->
-<header class="header">
-  <a href="inex.html" class="logo" style="font-family: 'Acme', sans-serif;"><img src="ASSETS\Images\pasc.png" height="50px" alt=""></a>
+<div class="header">
+  <a href="index.html" class="logo" style="font-family: 'Acme', sans-serif;"><img src="ASSETS\Images\pasc.png" height="50px" alt=""></a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
     <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
+	<li><a href="#about">About</a></li>
     <li><a href="#timeline">Timeline</a></li>
-    <li><a href="#sponsors">Sponsors</a></li>
+	<li><a href="#sponsors">Sponsors</a></li>
+	<li><a href="#faq">FAQs</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-</header>		
+</div>		
 
-		<div class="section page s1">
+		<div class="section page s1" id="home">
 			<div class="row">
 				<!-- <div class="col-sm-2"></div> -->
 				<div class="">
@@ -190,7 +53,7 @@
 
 		<!-- ---------------------------------------------------------------ABOUT------------------------------------------------------------------ -->
 
-		<div class="section page s2">
+		<div class="section page s2" id="about">
 			<div class="row">
 				<div class="col-sm-4">
 
@@ -300,95 +163,22 @@
 
 		<!-- -----------------------------------------------------------------------FAQ--------------------------------------------------------------------------- -->
 
-		<div class="section page s4">
+		<div class="section page s4" id="faq">
 
 			<h1 class="ml1">
 				<span class="text-wrapper">
 				  <span class="letters">FAQs</span>
 				  <span class="line line2"></span>
 				</span>
-			  </h1>
+			</h1>
 
 			  <br><br>
-			<div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
-  			<svg xmlns="http://www.w3.org/2000/svg">
-    		<symbol viewBox="0 0 24 24" id="expand-more">
-      			<path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
-    		</symbol>
-    		<symbol viewBox="0 0 24 24" id="close">
-      			<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
-    		</symbol>
-  			</svg>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-				<details close>
-					<summary>
-					  Q) What if I don't have a lot of experience with programming or technology? Is this event for me?
-					  <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-					  <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-					</summary>
-					<p style="margin-top: 15px;">A: Yes if you have fun while coding and you love to code then you are welcome to Pasckathon 2020. </p>
-				</details>
-				</div>
-				<div class="col-sm-4">
-				<details close>
-					  <summary>
-						  Q) If I am a member of a team that is attending, can we work together?
-							<svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-							<svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-					  </summary>
-					  <p style="margin-top: 15px;">A: Yes! You can work with whoever you like.  </p>
-				</details>	  
-				</div>
-				<div class="col-sm-4">
-				<details close>
-					<summary>
-						Q) What if i don't have a team and am coming as an individual?
-						  <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-						  <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-					</summary>
-					<p style="margin-top: 15px;">A: Great! You will have an opportunity to hear different ideas "pitched" and you can decide which idea interests you and join a team.   </p>
-				</details>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-				<details close>
-					<summary>
-						Q) Do all team members need to be present in person?
-						  <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-						  <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-					</summary>
-					<p style="margin-top: 15px;">A: No, as long as every member is individually registered in the system, the minimum is to have one member onsite.  </p>
-				</details>
-				</div>
-				<div class="col-sm-4">
-				<details close>
-					<summary>
-						Q) Do you provide accomodation, travel reimbursement and food?
-						  <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-						  <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-					</summary>
-					<p style="margin-top: 15px;">A: No, it is on you.However we provide food.  </p>
-				</details>
-				</div>
-				<div class="col-sm-4">
-				<details close>
-					<summary>
-						Q) What is the venue of the hackathon?
-						  <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-						  <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-					</summary>
-					<p style="margin-top: 15px;">A: Pune Institute of Computer Technology   </p>
-				</details>
-				</div>
-			</div>
+			
 		</div>
 
 		<!-- --------------------------------------------------------SPONSOR PAGE----------------------------------------------------------- -->
 
-		<div class="section page s5">
+		<div class="section page s5 id="sponsors"">
 			<h1 class="ml1">
 				<span class="text-wrapper">
 				  <span class="letters">Sponsors</span>
@@ -399,7 +189,7 @@
 
 <!-- --------------------------------------------------------------------CONTACT PAGE--------------------------------------------------------------- -->
 
-		<div class="section page s6">
+		<div class="section page s6" id="contact">
 
 			<div class="row">
 				<div class="col-sm-4"></div>
@@ -461,9 +251,9 @@
 		new fullpage('#fullPage', {
 			// autoScrolling: true,
 			sectionSelector: '.page',
-			navigation: true,
-			navigationTooltips: ['','About','Timeline','FAQ','Sponsors','Contact Us'],
-			showActiveTooltip: true,
+			//navigation: true,
+			//navigationTooltips: ['','About','Timeline','FAQ','Sponsors','Contact Us'],
+			//showActiveTooltip: true,
 			scrollOverflow : true,
 
 
@@ -472,7 +262,7 @@
 		
 
 var options = {
-  strings: ["Pascathon<span class='element' style='color:cyan'>'20</span>"],
+  strings: ["Pasckathon<span class='element' style='color:cyan'>'20</span>"],
   typeSpeed: 80
 };
 
