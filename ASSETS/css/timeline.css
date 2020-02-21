@@ -105,6 +105,7 @@ ul{
     background-color: #2e2b2b;
     padding: 20px;
     border-radius: 10px;
+    width:50%;
 }
 
 .timeline-event:nth-child(even){
@@ -215,6 +216,21 @@ box-shadow: -3px 2px 5px 0px rgb(34, 34, 34);
       -webkit-text-fill-color: transparent;
   }
 
+
+@media screen and (max-width:920px){
+    .timeline-event-copy{
+    
+        width:97%;
+    }
+}
+
+@media screen and (max-width:1132px){
+    .timeline-event-copy{
+    
+        width:70    %;
+    }
+}
+
   
 @media screen and (max-width:630px){
     .timeline-event-thumbnail{
@@ -252,4 +268,5 @@ box-shadow: -3px 2px 5px 0px rgb(34, 34, 34);
         padding-right: 17px;
     }
 }
+
   
