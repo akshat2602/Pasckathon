@@ -48,8 +48,9 @@
     cursor: pointer;
     display: inline-block;
     padding: 28px 20px;
-    position: relative;
+    position: absolute;
     user-select: none;
+    right: 20px;
   }
   
   .header .menu-icon .navicon {
@@ -87,7 +88,7 @@
   }
   
   .header .menu-btn:checked ~ .menu {
-    max-height: 240px;
+    max-height: 50vh;
   }
   
   .header .menu-btn:checked ~ .menu-icon .navicon {
