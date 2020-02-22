@@ -21,6 +21,12 @@
 	<link rel="stylesheet" href="ASSETS/css/header.css">
 	<link rel="stylesheet" href="ASSETS/css/faq.css">
 	<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+
+	<style>
+		.section{
+			min-height: 100vh;
+		}
+	</style>
 </head>
 
 <body>
@@ -52,9 +58,14 @@
 					<div class="">
 						<!-- <h1 id="pasc">Pasckathon<span class= "twenty-text">'20</span></h1> -->
 						<span class="element"></span>
-						<h2>What will you innovate?</h2>
-						<h2>“Code is like humor. When you have to explain it, it’s bad.”</h2>
 					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4">
+						<h2>What will you innovate?</h2>
+					</div>
+					<div class="col-sm-4"></div>
 					<!-- <div class="col-sm-2"></div> -->
 				</div>
 			</div>
@@ -324,7 +335,7 @@
 						<h3>Pune Institute of Computer Technology, Near Trimurti Chowk, Bharati Vidyapeeth Campus,
 							Dhankawadi, Pune, Maharashtra 411043</h3>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-4" stlye="margin-left:2%">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.5761897254206!2d73.84864491482712!3d18.457542087445756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac85230ba47%3A0x871eddd0a8a0a108!2sSCTR&#39;S%20Pune%20Institute%20of%20Computer%20Technology!5e0!3m2!1sen!2sin!4v1582286940895!5m2!1sen!2sin"
 							width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -336,8 +347,8 @@
 
 		<!-- -------------------------------------------------------------------END--------------------------------------------------------------------------------- -->
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"
-			integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"
+			integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>-->
 
 		<script src="ASSETS/js/scrolloverflow.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -350,16 +361,7 @@
 
 
 		<script>
-			new fullpage('#fullPage', {
-				// autoScrolling: true,
-				sectionSelector: '.page',
-				//navigation: true,
-				//navigationTooltips: ['', 'About', 'Timeline', 'FAQ', 'Sponsors', 'Contact Us'],
-				//showActiveTooltip: true,
-				scrollOverflow: true,
-
-
-			});
+			
 
 			var options = {
 				strings: ["Pasckathon<span class='element' style='color:cyan'>'20</span>"],

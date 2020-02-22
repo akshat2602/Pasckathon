@@ -1,6 +1,13 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-.page s3{
-  margin-top: 50px;
+*{
+  /*overflow-x: hidden;*/
+  text-align: center;
+}
+.page{
+  padding-top: 7%;
+}
+.page s1{
+  padding-top: 15%;
 }
 .s1{
   text-align: center;
