@@ -38,7 +38,7 @@
 
 <body>
 
-	<header class="header" style="z-index: 999999;">
+	<header class="header" style="z-index: 99999;">
 
 		<a href="index.html" class="logo" style="font-family: 'Acme', sans-serif;"><img src="ASSETS\Images\pasc.png"
 				height="50px" alt=""></a>
@@ -54,6 +54,11 @@
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</header>
+	<div class="loader-wrapper" style="z-index: 999999;">
+		<div class="load">
+			<hr/><hr/><hr/><hr/>
+		</div>
+	</div>
 	<div id="fullPage">
 
 		<!-- -----------------------------------------------------------HOME PAGE--------------------------------------------------------- -->
@@ -115,13 +120,13 @@
 				<div class='row' style="margin-top: 10px;">
 					<div class='col-sm-6'>
 						<h3 style="text-align: left ;text-align: justify;color: #79CDCD; ">First Round</strong></h3>
-						<p style="text-align: left;text-align: justify;margin-right: 150px;">For the first round,
+						<p style="text-align: left;text-align: justify;">For the first round,
 							participants will be submitting a PowerPoint Presentation with their problem statement,
 							ideas,
 							solutions, tech stack and case diagrams.</p>
 						<br>
 						<h3 style="text-align: left;text-align: justify;color: #79CDCD;">Second Round</h3>
-						<p style="text-align: left;text-align: justify;margin-right: 150px;">During the second round,
+						<p style="text-align: left;text-align: justify;">During the second round,
 							qualified teams will gather at the given venue and implement their idea. This round will be
 							for
 							18 hours. After the time is up, the teams will stop working on the hacks and present it in
@@ -407,7 +412,9 @@
 
 
 		<script>
-			
+			$(window).on("load",function(){
+				$(".loader-wrapper").fadeOut("fast");
+			});
 			var options = {
 				strings: ["Pasckathon<span class='element' style='color:cyan'>'20</span>"],
 				typeSpeed: 80
