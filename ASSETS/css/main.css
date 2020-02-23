@@ -9,8 +9,11 @@
 .page s1{
   padding-top: 15%;
 }
-.s1{
+.s1
+{
   text-align: center;
+  background: url('../Images/Pasc5v2.png');
+  background-size: cover;
 }
 h1
 {
@@ -60,8 +63,7 @@ h3
 }
 body
 {
-  background: url('../Images/Pasc5v2.png');
-  background-size: cover;
+  background-color: #252525;
   font-family: 'Raleway';
   color:white;
   text-align: center;
