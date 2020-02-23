@@ -47,6 +47,7 @@
 		<ul class="menu">
 			<li><a href="#home">Home</a></li>
 			<li><a href="#about">About</a></li>
+			<li><a href="#themes">Themes</a></li>
 			<li><a href="#timeline">Timeline</a></li>
 			<li><a href="#faq">FAQ</a></li>
 			<li><a href="#sponsors">Sponsors</a></li>
@@ -132,9 +133,19 @@
 				</div>
 			</div>
 		</div>
-
+		<!------------------------------------------------------------------THEMES----------------------------------------------------------------------->
+		<div class="section page s3" id="themes">
+			<div class="contianer">
+				<h1 class="ml1">
+					<span class="text-wrapper">
+						<span class="letters">Themes</span>
+						<span class="line line2"></span>
+					</span>
+				</h1>
+			</div>
+		</div>
 		<!-- ---------------------------------------------------------------TIMELINE------------------------------------------------------------------ -->
-		<div class="section page s3" id="timeline">
+		<div class="section page s4" id="timeline">
 			<div class="timeline_container">
 				<h1 class="ml1">
 					<span class="text-wrapper">
@@ -204,7 +215,7 @@
 
 		<!-- -----------------------------------------------------------------------FAQ--------------------------------------------------------------------------- -->
 
-		<div class="section page s4" id="faq">
+		<div class="section page s5" id="faq">
 			<div class="container">
 				<h1 class="ml1">
 					<span class="text-wrapper">
@@ -291,7 +302,7 @@
 
 		<!-- --------------------------------------------------------SPONSOR PAGE----------------------------------------------------------- -->
 
-		<div class="section page s5" id="sponsors">
+		<div class="section page s6" id="sponsors">
 			<div class="contianer">
 				<h1 class="ml1">
 					<span class="text-wrapper">
@@ -330,7 +341,7 @@
 
 		<!-- --------------------------------------------------------------------CONTACT PAGE--------------------------------------------------------------- -->
 
-		<div class="section page s6" id="contact">
+		<div class="section page s7" id="contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4"></div>
@@ -406,32 +417,32 @@
 
 		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+		<script>
+			$(document).ready(function(){
+  			// Add smooth scrolling to all links
+  			$("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+    			// Make sure this.hash has a value before overriding default behavior
+    			if (this.hash !== "") {
+      			// Prevent default anchor click behavior
+      			event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+      			// Store hash
+ 	     		var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+    	  		// Using jQuery's animate() method to add smooth page scroll
+      			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      			$('html, body').animate({
+        		scrollTop: $(hash).offset().top
+      		}, 800, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+        		window.location.hash = hash;
+      		});
+    		} // End if
+  			});	
+			});
+		</script>
 </body>
 
 </html>
