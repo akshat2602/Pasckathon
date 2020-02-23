@@ -28,6 +28,7 @@
 		}
 		html{
 			scroll-behavior: smooth;
+
 		}
 		body{
 			overflow-x: hidden;
@@ -40,20 +41,42 @@
 
 	<header class="header" style="z-index: 99999;">
 
-		<a href="index.html" class="logo" style="font-family: 'Acme', sans-serif;"><img src="ASSETS\Images\pasc.png"
-				height="50px" alt=""></a>
-		<input class="menu-btn" type="checkbox" id="menu-btn" />
-		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-		<ul class="menu">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#themes">Themes</a></li>
-			<li><a href="#timeline">Timeline</a></li>
-			<li><a href="#faq">FAQ</a></li>
-			<li><a href="#sponsors">Sponsors</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  data-toggle="collapse" data-target=".navbar-collapse.show">Themes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  data-toggle="collapse" data-target=".navbar-collapse.show">Timeline</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  data-toggle="collapse" data-target=".navbar-collapse.show">FAQ's</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  data-toggle="collapse" data-target=".navbar-collapse.show">Sponsors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
+      </li>
+
+    </ul>
+    
+  </div>
+</nav>
 	</header>
+
 	<div class="loader-wrapper" style="z-index: 999999;">
 		<div class="load">
 			<hr/><hr/><hr/><hr/>
@@ -403,7 +426,9 @@
 
 		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"
 			integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>-->
-
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		<script src="ASSETS/js/scrolloverflow.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -412,6 +437,10 @@
 		<script src="ASSETS/js/font-motion-1.js"></script>
 		<!-- <script src="ASSETS/js/typed.js"></script> -->
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+		<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 
 
 		<script>
@@ -444,7 +473,7 @@
       			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       			$('html, body').animate({
         		scrollTop: $(hash).offset().top
-      		}, 800, function(){
+      		}, 100, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         		window.location.hash = hash;
@@ -452,6 +481,12 @@
     		} // End if
   			});	
 			});
+			
+			$(".nav-link a").click(function(){
+    $;
+			
+
+		
 		</script>
 </body>
 
